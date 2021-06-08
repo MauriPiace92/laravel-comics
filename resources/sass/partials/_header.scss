@@ -1,0 +1,67 @@
+.upper-header{
+    background-color: $primary_color;
+    text-align: right;
+
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 10pc 10px;
+    }
+}
+
+.header-menu{
+    display: flex;
+
+    .logo{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+
+    nav{
+        
+        .menu{
+            list-style-type: none;
+            margin-left: 50px;
+            
+            li{
+
+                display: inline-block;
+                line-height: 152px;
+                margin: 0 20px;
+
+                &.active{
+                    border-bottom: 5px solid $primary_color;
+                }
+
+                a{
+                    text-transform: uppercase;
+                    color: $secondary_color;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 18px;
+
+                    &.active{
+                        color: $primary_color;
+                        
+                    }
+
+                    .freccia{
+                        color: $primary_color;
+                        line-height: 5px;
+                    }
+
+                }
+
+                input{
+                    border: none;
+                    border-bottom: 2px solid $primary_color;
+                    text-align: right;
+                    font-size: 15px;
+                    font-weight: bold;
+                    
+                }
+            }
+        }
+    }
+}

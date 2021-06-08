@@ -1,4 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aquamarine;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.upper-header {
+  background-color: #0282f9;
+  text-align: right;
+}
+
+.upper-header a {
+  color: white;
+  text-decoration: none;
+  padding: 10pc 10px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu .logo {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+.header-menu nav .menu {
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.header-menu nav .menu li {
+  display: inline-block;
+  line-height: 152px;
+  margin: 0 20px;
+}
+
+.header-menu nav .menu li.active {
+  border-bottom: 5px solid #0282f9;
+}
+
+.header-menu nav .menu li a {
+  text-transform: uppercase;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header-menu nav .menu li a.active {
+  color: #0282f9;
+}
+
+.header-menu nav .menu li a .freccia {
+  color: #0282f9;
+  line-height: 5px;
+}
+
+.header-menu nav .menu li input {
+  border: none;
+  border-bottom: 2px solid #0282f9;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
 }
 
