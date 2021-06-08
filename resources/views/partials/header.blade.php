@@ -44,12 +44,15 @@
                         <a href="#">shop <i class="freccia fas fa-sort-down"></i></a>
                     </li>
                 
-                    <li class="search-bar">
-                        <input type="text" placeholder="search">
-                        <i class="fas fa-search"></i>
-                    </li>
+                   
                 </ul>
             </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="search">
+                <i class="fas fa-search"></i>
+            </div>
+
+
             
         </div>    
     </div>

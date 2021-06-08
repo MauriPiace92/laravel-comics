@@ -21,7 +21,6 @@ img {
   background-color: #0282f9;
   text-align: right;
 }
-
 .upper-header a {
   color: white;
   text-decoration: none;
@@ -30,29 +29,29 @@ img {
 
 .header-menu {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .header-menu .logo {
   width: 150px;
   height: 150px;
   padding: 20px;
 }
-
+.header-menu nav {
+  text-align: right;
+}
 .header-menu nav .menu {
   list-style-type: none;
   margin-left: 50px;
 }
-
 .header-menu nav .menu li {
   display: inline-block;
   line-height: 152px;
   margin: 0 20px;
 }
-
 .header-menu nav .menu li.active {
   border-bottom: 5px solid #0282f9;
 }
-
 .header-menu nav .menu li a {
   text-transform: uppercase;
   color: #222;
@@ -60,21 +59,34 @@ img {
   font-weight: bold;
   font-size: 18px;
 }
-
 .header-menu nav .menu li a.active {
   color: #0282f9;
 }
-
 .header-menu nav .menu li a .freccia {
   color: #0282f9;
   line-height: 5px;
 }
-
-.header-menu nav .menu li input {
+.header-menu .search-bar {
+  border-bottom: 3px solid #0282f9;
+}
+.header-menu .search-bar input {
   border: none;
-  border-bottom: 2px solid #0282f9;
   text-align: right;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 }
+.header-menu .search-bar input i {
+  margin-left: 5px;
+  color: #222;
+}
+.header-menu .search-bar input:focus {
+  outline: none !important;
+}
 
+.jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
