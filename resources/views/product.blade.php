@@ -2,6 +2,15 @@
 
 @section('main_content')
 
+    <section class="jumbotron">
+        <div class="container">
+            <div class="title">
+                <h3>Current series</h3>
+
+            </div>
+        </div>
+    </section> 
+
     {{-- Single Product --}}
     <div class="single-product">
 
