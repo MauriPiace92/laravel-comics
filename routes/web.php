@@ -14,5 +14,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics_array = config('comics');
+
+    $data = [
+        'comics' => $comics_array,
+    ];
+    return view('home',$data);
 })->name('home');
+
+Route::get('/product/{id}', function ($id) {
+    $comics = config('comics');
+
+    $product = [];
+    foreach($comics as $comic) {
+        if($comic['id'] == $id) {
+            $product = $comic;
+        }
+    }
+
+    if(empty($product)) {
+        abort('404');
+    }
+   
+    $data = [
+        'product' => $product
+    ];
+
+    return view('product', $data);
+})->name('product');
+

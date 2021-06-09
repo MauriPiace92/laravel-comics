@@ -1,0 +1,98 @@
+footer{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    
+    .links {
+        width: 50%;
+        padding-top: 40px ;
+        flex-wrap: wrap;
+
+        .menu {
+            list-style-type: none;
+            padding-right: 30px;
+
+            li {
+                padding: 3px 0;
+
+                h3 {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                }
+
+                a {
+                    color: grey;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+
+        p {
+            padding: 20px 0;
+            color: grey;
+            font-size: 14px;
+        }
+        .footer-image {
+            width: 55%;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: -80px;
+                right: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .bg-grey {
+        background-color: #303030;
+        padding: 40px 0;
+
+        .container {
+            justify-content: space-between;
+            align-items: center;
+
+            .access {
+                width: 50%;
+
+                .sign-up {
+                    border: 2px solid $primary_color;
+                    padding: 10px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+        
+                }
+            }
+
+            .follow {
+                width: 50%;
+                align-items: center;
+                justify-content: flex-end;
+
+                .follow-text {
+                    color: $primary_color;
+                    font-weight: bold;
+                    font-size: 22px;
+                    padding-right: 25px;
+                }
+
+                .social-menu {
+                    list-style-type: none;
+
+                    li {
+                        padding: 0 10px;
+
+                        img {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

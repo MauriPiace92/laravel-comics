@@ -6,11 +6,12 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-img{
-    width: 100%;
-}
 
 .container{
     width: 80%;
     margin: auto;
+}
+
+.flex{
+    display: flex;
 }

@@ -8,13 +8,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-img {
-  width: 100%;
-}
-
 .container {
   width: 80%;
   margin: auto;
+}
+
+.flex {
+  display: flex;
 }
 
 .upper-header {
@@ -89,4 +89,315 @@ img {
   background-size: cover;
   height: 500px;
   width: 100%;
+  position: relative;
+}
+.jumbotron .title {
+  background-color: #0282f9;
+  color: white;
+  position: absolute;
+  left: 10%;
+  bottom: -22px;
+  text-align: center;
+  padding: 10px 20px;
+}
+.jumbotron .title h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.comics {
+  background-color: #222;
+  padding: 40px 0;
+}
+.comics .comics-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+.comics .comic {
+  width: calc(100% / 6);
+  padding: 10px;
+}
+.comics .comic .cover {
+  height: 200px;
+  overflow: hidden;
+}
+.comics .comic h4 {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.comics .button {
+  text-align: center;
+}
+.comics .button a {
+  background-color: #0282f9;
+  padding: 20px 60px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.blue-section {
+  background-color: #0282f9;
+}
+
+.blue-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+.blue-menu li {
+  width: calc(100% / 5);
+  display: flex;
+  align-items: center;
+}
+.blue-menu li span {
+  color: white;
+  padding-left: 30px;
+}
+
+.list-icon {
+  height: 60px;
+}
+
+.list-icon.power-visa {
+  height: 40px;
+}
+
+.single-product .bg-blue {
+  height: 100px;
+  background-color: #0282f9;
+}
+.single-product .container {
+  position: relative;
+}
+.single-product .container .product-image {
+  position: absolute;
+  top: -320px;
+  left: 0;
+  border: 1px solid #ffffff;
+}
+.single-product .container .info {
+  padding: 80px 0;
+  justify-content: space-between;
+}
+.single-product .container .info .info-product {
+  width: 60%;
+}
+.single-product .container .info .info-product h1 {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+.single-product .container .info .info-product .availability {
+  justify-content: space-between;
+  background-color: #55ba59;
+}
+.single-product .container .info .info-product .availability .price {
+  width: 55%;
+  color: #bafd9c;
+}
+.single-product .container .info .info-product .availability .result-price {
+  color: #ffffff;
+}
+.single-product .container .info .info-product .availability .available {
+  width: 20%;
+  text-align: right;
+  border-right: 1px solid #000000;
+  color: #bafd9c;
+  text-transform: uppercase;
+}
+.single-product .container .info .info-product .availability .check-availability {
+  width: 25%;
+  color: #ffffff;
+}
+.single-product .container .info .info-product .availability .price,
+.single-product .container .info .info-product .availability .available,
+.single-product .container .info .info-product .availability .check-availability {
+  padding: 15px;
+}
+.single-product .container .info .info-product p {
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 25px;
+  color: gray;
+}
+.single-product .container .info .adv-image {
+  width: 40%;
+  text-align: right;
+}
+.single-product .container .info .adv-image h3 {
+  color: gray;
+}
+.single-product .cast {
+  background-color: #f6f6f6;
+  border-top: 1px solid lightgray;
+  padding-top: 60px;
+}
+.single-product .cast .cast-content {
+  justify-content: space-between;
+  align-items: baseline;
+}
+.single-product .cast .cast-content .list-title {
+  width: 30%;
+  color: #003f5e;
+}
+.single-product .cast .cast-content .data-of-product {
+  width: 70%;
+}
+.single-product .cast .cast-content h2 {
+  color: #003f5e;
+}
+.single-product .cast .cast-content .artist-content {
+  width: 50%;
+}
+.single-product .cast .cast-content .artist-content li {
+  display: inline-block;
+  color: #00a9df;
+  font-size: 14px;
+  line-height: 10px;
+}
+.single-product .cast .cast-content .artist-content .artist,
+.single-product .cast .cast-content .artist-content .writers,
+.single-product .cast .cast-content .artist-content h2 {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 15px 0;
+}
+.single-product .cast .cast-content .info-content {
+  width: 45%;
+}
+.single-product .cast .cast-content .info-content .series,
+.single-product .cast .cast-content .info-content .price,
+.single-product .cast .cast-content .info-content .on-sale,
+.single-product .cast .cast-content .info-content h2 {
+  padding: 15px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+.single-product .cast .cast-content .info-content .specs-series {
+  text-transform: uppercase;
+  color: #00a9df;
+}
+.single-product .cast .icon-container {
+  margin-top: 60px;
+  border-top: 1px solid #e3e3e3;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon {
+  padding: 10px;
+  color: grey;
+  width: calc(100% / 4);
+  justify-content: space-around;
+  border-left: 1px solid #e3e3e3;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon:last-child {
+  border-right: 1px solid #e3e3e3;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon h5 {
+  text-transform: uppercase;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon #digital-comics,
+.single-product .cast .icon-container .icon-product-page .single-icon #shop-dc,
+.single-product .cast .icon-container .icon-product-page .single-icon #comic-shop,
+.single-product .cast .icon-container .icon-product-page .single-icon #subscription {
+  background-image: url(../img/cta-icons.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 45px;
+  width: 45px;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon #digital-comics {
+  background-position: 0 0;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon #shop-dc {
+  background-position: -135px 0;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon #comic-shop {
+  background-position: -90px 0;
+}
+.single-product .cast .icon-container .icon-product-page .single-icon #subscription {
+  background-position: -45px 0;
+}
+
+footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+}
+footer .links {
+  width: 50%;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+footer .links .menu {
+  list-style-type: none;
+  padding-right: 30px;
+}
+footer .links .menu li {
+  padding: 3px 0;
+}
+footer .links .menu li h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+footer .links .menu li a {
+  color: grey;
+  font-size: 15px;
+  text-decoration: none;
+}
+footer .links p {
+  padding: 20px 0;
+  color: grey;
+  font-size: 14px;
+}
+footer .links .footer-image {
+  width: 55%;
+  position: relative;
+  overflow: hidden;
+}
+footer .links .footer-image img {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 100%;
+}
+footer .bg-grey {
+  background-color: #303030;
+  padding: 40px 0;
+}
+footer .bg-grey .container {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bg-grey .container .access {
+  width: 50%;
+}
+footer .bg-grey .container .access .sign-up {
+  border: 2px solid #0282f9;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+footer .bg-grey .container .follow {
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .bg-grey .container .follow .follow-text {
+  color: #0282f9;
+  font-weight: bold;
+  font-size: 22px;
+  padding-right: 25px;
+}
+footer .bg-grey .container .follow .social-menu {
+  list-style-type: none;
+}
+footer .bg-grey .container .follow .social-menu li {
+  padding: 0 10px;
+}
+footer .bg-grey .container .follow .social-menu li img {
+  cursor: pointer;
 }
